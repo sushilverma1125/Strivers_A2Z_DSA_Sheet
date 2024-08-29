@@ -1,19 +1,18 @@
 ## Welcome to my Striver's A2Z DSA Sheet repository! 📚✨ In this repo, you’ll find all my learnings on the various DSA topics covered in Striver's A2Z DSA sheet. 🚀💡
 
 ## Topics Covered
-<b>1. Basic Maths </b><br>
-   a) Count Digits <br>
-   b) Reverse Number <br>
-   c) Palindrome <br>
-   d) Armstrong <br>
-   e) Print Divisors <br>
-   f) Check Prime <br>
-   g) HCF/GCD <br>
+- **1. Basic Maths**
+  - Count Digits
+  - Reverse Number
+  - Palindrome
+  - Armstrong
+  - Print Divisors
+  - Check Prime
+  - HCF/GCD
 
-<b>2. Basic Recursion</b> <br>
-   a) <br>
-   b) <br>
-   c) <br>
-   d) <br>
- 
-3. 
+- **2. Basic Recursion**
+  - Print name N times 
+  - Print 1 to N
+  - Print N to 1
+  - Sum of first N numbers
+  - Factorial of N numbers
