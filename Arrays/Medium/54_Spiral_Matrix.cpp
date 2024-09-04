@@ -59,7 +59,7 @@ int main() {
 
     // Get the spiral order of the matrix
     vector<int> result = spiralMatrix(matrix);
-aa
+
     // Print the result
     cout << "Spiral order of the matrix is:" << endl;
     for (int num : result) {
