@@ -1,6 +1,5 @@
-// Iterative approach
+// Iterative approach  T.C : O(n)  S.C: O(1)
 int search(vector<int> &nums, int target) {
-    // Write your code here.
     int low = 0, high = nums.size() - 1;
 
     while(low <= high) {
@@ -12,10 +11,11 @@ int search(vector<int> &nums, int target) {
     return -1;
 }
 
-// Recursive approach
+// Recursive approach T.C :  O(log n)  S.C: O(log n)
 int recBinarySearch(vector<int> &nums, int low, int high, int target) {
     if(low > high)  return -1;
     int mid = (low + high) / 2;
+    // int mid = low + (high-low)/2;
     if(nums[mid] == target) return mid;
     else if(target > nums[mid]) return recBinarySearch(nums, mid + 1, high, target);
     return recBinarySearch(nums, low, high - 1, target);
