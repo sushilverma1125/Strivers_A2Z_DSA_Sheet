@@ -8,9 +8,15 @@ Input: s = "foo", t = "bar"
 Output: false
 
 Approach:
-Step 1: We will use two unordered_map to map the characters of s and t and also to check whether it's duplicated. If it's duplicated then there we will return false.
-Step 2: 
+Step 1: Use two unordered_map to map characters from s to t and vice versa. This helps check for duplicates and inconsistencies.
+Step 2: Iterate through both strings:
+    For each character pair ch1 (from s) and ch2 (from t):
+        If ch1 is already mapped, ensure it maps to ch2; if not, return false.
+        If ch2 is already mapped, ensure it maps to ch1; if not, return false.
+        If not mapped, create the mappings for both.
+Step 3: If the loop completes without conflicts, return true to indicate the strings are isomorphic.
 */
+
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
