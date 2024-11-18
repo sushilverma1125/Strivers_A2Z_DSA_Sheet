@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct Node
+class Node
 {   
     public:
     int data;
@@ -16,5 +16,5 @@ struct Node
 
 int main () {
     Node *x = new Node(2); 
-    cout << x->data;
+    cout << x->data; // OUTPUT: 2
 }
