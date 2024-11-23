@@ -107,7 +107,7 @@ int main() {
     }
     cout << endl << "Length of linked list is: " << lengthOfLinkedList(head) << endl;
 
-    cout << "Element " << searchElement(head, 12) << endl; // OUTPUT: Element found
+    cout << "Element " << searchElement(head, 3) << endl; // OUTPUT: Element found
     cout << "Element " << searchElement(head, 1) << endl;  // OUTPUT: Element not found
 
     // Delete the head
@@ -118,7 +118,7 @@ int main() {
     // Delete the tail
     head = deleteTail(head); // Update the head after deletion
     cout << "Linked list after deleting tail is: ";
-    print(head); // Correcty call the print function with updated head
+    print(head); // Correctly call the print function with updated head
 
     return 0;
 }
