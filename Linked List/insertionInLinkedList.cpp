@@ -11,6 +11,11 @@ public:
         data = data1;
         next = nullptr;
     }
+
+    Node (int data1, Node* next1) {
+        data = data1;
+        next = next1;
+    }
 };
 
 // Function to print the linked list
@@ -41,7 +46,10 @@ Node* convertToLinkedList(const vector<int>& arr) {
     return head;
 }
 
-Node *insert
+Node *insertAtHead(Node *head, int ele) {
+    Node *temp = new Node(ele, head);
+    return temp;
+}
 
 // Main function for testing createLinkedList functionality
 int main() {
@@ -50,6 +58,11 @@ int main() {
 
     // Print the linked list
     cout << "Linked List: ";
+    print(head);
+
+    // After inserting the element at head
+    head = insertAtHead(head, 11);
+    cout << "After inserting the element at head: ";
     print(head);
 
     return 0;
